@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:com.migh.poster="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/EventsGridMenu_addButton"
+        android:icon="@drawable/ic_add_icon"
+        android:title="Add"
+        com.migh.poster:showAsAction="ifRoom"
+        android:orderInCategory="10"
+        />
+    <item
+        android:id="@+id/EventsGridMenu_refreshButton"
+        android:icon="@drawable/ic_refresh_icon"
+        android:title="Refresh"
+        com.migh.poster:showAsAction="ifRoom"
+        android:orderInCategory="30"/>
+    <item
+        android:id="@+id/EventsGridMenu_searchButton"
+        android:title="Search"
+        android:icon="@drawable/ic_search_icon"
+        android:orderInCategory="20"
+        com.migh.poster:showAsAction="ifRoom|collapseActionView"
+        com.migh.poster:actionViewClass="android.support.v7.widget.SearchView"/>
+
+</menu>

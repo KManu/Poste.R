@@ -1,7 +1,9 @@
 package com.migh.poster.Activities;
 
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Typeface;
+import android.support.v4.util.Pair;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -9,7 +11,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-
+import com.migh.poster.ServicesAndTasks.EndpointsAsyncTask;
 import com.migh.poster.R;
 
 
@@ -42,6 +44,7 @@ public class LoginActivity extends ActionBarActivity {
             public void onClick(View v) {
                 Intent startMain = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(startMain);
+
             }
         });
 

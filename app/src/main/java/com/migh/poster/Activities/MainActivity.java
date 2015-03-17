@@ -1,10 +1,12 @@
 package com.migh.poster.Activities;
 
 
+import android.content.Context;
 import android.graphics.drawable.ColorDrawable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.util.Pair;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.graphics.Typeface;
@@ -21,6 +23,7 @@ import android.widget.Toast;
 import com.migh.poster.Fragments.EventsGridFragment;
 import com.migh.poster.Fragments.FeedsGridFragment;
 import com.migh.poster.R;
+import com.migh.poster.ServicesAndTasks.EndpointsAsyncTask;
 
 public class MainActivity extends ActionBarActivity {
     ActionBar actionBar;
@@ -47,6 +50,7 @@ public class MainActivity extends ActionBarActivity {
         currentFrag = "Main";
         init();
         setupActionBar();
+        new EndpointsAsyncTask().execute(new Pair<Context, String>(this, "Kobby"));
     }
 
     private void init() {
@@ -92,6 +96,7 @@ public class MainActivity extends ActionBarActivity {
             public void onClick(View v) {
                 // Start up the feed creation activity.
                 Toast.makeText(getApplicationContext(), "Create feed button clicked", Toast.LENGTH_SHORT).show();
+
             }
         });
 

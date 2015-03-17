@@ -5,10 +5,13 @@
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleHome" value="C:/Program Files/gradle-1.11" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/Postebackend" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/backend" />
           </set>
         </option>
       </GradleProjectSettings>
